@@ -21,9 +21,10 @@ from sklearn.metrics import precision_score,accuracy_score
 from sklearn.model_selection import RandomizedSearchCV,GridSearchCV,RepeatedStratifiedKFold
 from PIL import ImageGrab
 
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="matplotlib")
 
 st.set_page_config(page_title="Water Quality", page_icon="🌾", layout="wide", initial_sidebar_state="auto", menu_items=None)
-st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("The Water Quality Analysis App")
 image = Image.open('tree.jpg')
 st.image(image)
