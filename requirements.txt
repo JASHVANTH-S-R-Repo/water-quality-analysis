@@ -12,3 +12,4 @@ scikit-learn
 nltk
 wheel
 tzdata  # Optional but recommended for time zone handlin
+googletrans
